@@ -567,3 +567,18 @@ h4 {
         font-size: 2.45rem;
     }
 }
+
+
+/* Keep Draft and Abstract on one row while collapsed. */
+.paper-links-inline {
+    align-items: center;
+}
+
+.paper-links-inline .abstract-inline {
+    flex-basis: auto;
+}
+
+/* Once opened, let the abstract expand across the full row. */
+.paper-links-inline .abstract-inline[open] {
+    flex-basis: 100%;
+}
